@@ -1,0 +1,156 @@
+/* CSS file for MyTimes */
+/* header */
+header {
+  display: flex;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  color: mediumaquamarine;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  align-content: center;
+}
+
+nav {
+  display: inline-flex;
+  justify-content: space-around;
+  min-width: 250px;
+  align-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: black;
+}
+
+/* end header */
+
+
+div {
+  border: 1px solid black;
+  width: 100%;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.article {
+
+}
+
+.minor.article h1 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.minor.article {
+  display: flex;
+}
+
+.major.article {
+  display: inline-flex;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid crimson;
+}
+
+.column.large, .column.medium, .column.small {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.location {
+  text-transform: uppercase;
+}
+
+
+#orcaspends, #burgerfor, #catsin, #fbifinds {
+  flex-direction: column;
+}
+
+/* large column */
+.column.large {
+  width: 630px;
+  border: 2px solid aqua;
+  justify-content: flex-start;
+}
+
+#motherofthree {
+  flex-direction: column;
+}
+
+#earthspins, #researchshows {
+  order: 1;
+  margin: 0;
+}
+
+#orcaspends, #burgerfor, #earthspins, #researchshows {
+  width: 315px;
+}
+
+#motherofthree h1 {
+  background-image: url("./images/img-story-main.png");
+  background-size: cover;
+  min-height: 300px;
+  font-size: 40px;
+  display: flex;
+  margin: 0;
+}
+
+#earthspins h1 {
+  background-image: url("./images/img-story-2.png");
+  min-height: 300px;
+  display: flex;
+  width: 315px;
+}
+
+#researchshows h1 {
+  background-image: url("./images/img-story-3.png");
+  min-height: 300px;
+}
+/* end large column */
+
+/* medium column */
+.column.medium {
+  width: 300px;
+  border: 2px solid darkgreen;
+}
+
+#catsin h1 {
+  background-image: url("img-story-1.png");
+  min-height: 300px;
+  display: flex;
+}
+
+/*end medium column */
+
+/* small column */
+.column.small {
+  width: 240px;
+  border: 2px solid yellow;
+  flex-direction: column;
+}
+
+.column.small img {
+  width: 240px;
+  height: 240px;
+}
+/* end small column */
