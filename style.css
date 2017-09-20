@@ -12,6 +12,7 @@ header {
   justify-content: space-between;
   border-bottom: 2px solid black;
   align-content: center;
+  flex-flow: row wrap;
 }
 
 nav {
@@ -47,11 +48,12 @@ h2 {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 50px;
-  min-width: 1240px;
-  height: 1250px;
+/*  min-width: 1240px;
+  height: 1250px; */
   align-content: flex-start;
+  flex-flow: row wrap;
 }
 
 .location {
@@ -84,11 +86,6 @@ p {
   color: black;
 }
 
-/* testing div border
-div {
-  border: 1px solid black;
-}
-*/
 
 /* end universal */
 
@@ -100,6 +97,7 @@ div {
   flex-flow: row wrap;
   justify-content: space-between;
   align-content: flex-start;
+  flex-shrink: 2;
 }
 
 .minor.news_item {
@@ -131,6 +129,7 @@ div {
 
 .column.medium {
   width: 300px;
+  flex-shrink: 1;
 }
 
 .image.catsin {
@@ -149,6 +148,7 @@ div {
 .column.small {
   width: 240px;
   margin: 0;
+  flex-shrink: 0;
 }
 
 .colmun.small h3 {
@@ -181,6 +181,7 @@ footer {
   flex-flow: row wrap;
   align-content: center;
   justify-content: center;
+  flex-flow: row wrap;
 }
 
 .name {
